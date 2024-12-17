@@ -85,7 +85,7 @@ def get_configure(model):
     dict
         Returns the manually specified configuration
     """
-    with open('../graph/model_configures/{}.json'.format(model), 'r') as f:
+    with open('tox_pred_graph/model_configures/{}.json'.format(model), 'r') as f:
         config = json.load(f)
     return config
 
