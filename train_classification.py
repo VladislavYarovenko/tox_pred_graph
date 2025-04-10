@@ -190,6 +190,8 @@ if __name__ == '__main__':
                         help='Path to save training results (default: classification_results)')
     parser.add_argument('-ne', '--num-evals', type=int, default=None,
                         help='Number of trials for hyperparameter search (default: None)')
+    parser.ass_argument('-assay', '--tox-assay', type=str, defalut='NR-AR', 
+                        help='Tox 21 assay (default: NR-AR')
     args = parser.parse_args().__dict__
 
     if torch.cuda.is_available():
